@@ -21,7 +21,7 @@ a cache simulator:
   keeping track of when a cache line was last used. This cache should implement 
   "write through" meaning that any write operations are immediately pushed to the main
   memory when they occur. Note, that only the word that contains the byte written should
-  be updated in main memory. Not the entire cache line.
+  be updated in main memory (not the entire cache line).
 * Set Associative Write Back Cache
 
   This version implements a general set-associative cache with reading and writing
