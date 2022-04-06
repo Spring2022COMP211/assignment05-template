@@ -30,7 +30,7 @@ typedef struct MainMemOpLog {
 #define LOG_INCREMENT_SIZE 250
 
 // Allocates and returns a pointer to MainMemOpLog structure
-MainMemOpLog *createMainMemOpLog();
+MainMemOpLog *createMainMemOpLog(uint32_t word_count);
 
 // Frees memory associatd with MainMemOpLog structure
 void freeMainMemOpLog(MainMemOpLog *op_log);

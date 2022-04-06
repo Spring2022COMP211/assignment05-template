@@ -81,7 +81,7 @@ void freeMainMemOpLog(MainMemOpLog *op_log) {
 //            
 void logOperation(MainMemOpLog *op_log, MemOp op_type, uint32_t word_index, uint32_t value) {
     if (op_log->nextIdx == op_log->logSize) {
-        op_log->logSize += INIT_LOG_SIZE;
+        op_log->logSize += LOG_INCREMENT_SIZE;
         op_log->entries = (MainMemOpLogEntry *) realloc(op_log->entries, 
                 op_log->logSize * sizeof(MainMemOpLogEntry)); 
     } 
