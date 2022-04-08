@@ -1,7 +1,7 @@
 #include "fa_cache.h"
 
 FACache *createFACache(MainMem *mem,
-                     uint32_t set_index_bitcount,
+                     uint32_t word_index_bitcount,
                      uint32_t num_cache_lines) {
 
     return NULL;
